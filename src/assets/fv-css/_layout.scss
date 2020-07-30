@@ -1,0 +1,50 @@
+$background-color:#EEEEEE;
+$lightbg-color:#EEEDEB;
+
+@mixin mp0 {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin cntr{
+    width: calc(100% - 20px);
+    margin: 10px;
+}
+
+@mixin wh100{
+    width: 100%;
+    height: 100%;
+}
+
+@mixin clickable{
+    cursor: pointer;
+}
+
+html,body,#root{
+    @include wh100;
+    @include mp0;
+    background-color: $background-color;
+    font-family: 'Poppins', sans-serif;
+}
+
+.center{
+    text-align: center;
+}
+
+.fv-app{
+    @include wh100;
+    @include mp0;
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+}
+
+.fv-app-container{
+    @include mp0;
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px; 
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,33 @@
+.navbar-mob{
+    // margin-top: auto;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background-color: $lightbg-color;
+    display: flex;
+    border-top: 1px solid #CFCBC3;
+    position: fixed;
+}
+.nav-item{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    padding: 5px;
+    @include clickable;
+}
+
+.nav-icon{
+    font-size: 30px;
+    font-weight: lighter;
+    color: #3F3844;
+}
+
+.nav-center-icon{
+    font-size: 60px;
+    margin-top: -5px;
+}
+
+.nav-text{
+    
+   line-height: 1;
+}
